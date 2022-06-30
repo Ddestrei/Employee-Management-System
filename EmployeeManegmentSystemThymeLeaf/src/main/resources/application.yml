@@ -1,0 +1,25 @@
+
+spring:
+  main:
+    allow-circular-references: true
+  application:
+    name: EmployeeManegeSystemThymeLeaf
+  datasource:
+    url: jdbc:postgresql://localhost:5432/patryk
+    username: 'patryk'
+    password: 'password'
+  jpa:
+    hibernate:
+      ddl-auto: update
+      format_sql: true
+    open-in-view: 'true'
+  properties:
+    hibernate:
+    dialect: org.hibernate.dialect.PostgresSQLDialect
+    format_sql: 'true'
+  show-sql: 'true'
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: debug
